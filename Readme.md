@@ -35,3 +35,11 @@ DEEPFACE_DETECTOR=mtcnn DEEPFACE_SKIP_FRAME=24 docker compose run deepface
 
 ### 4. Result
 You can find the result in the ```./volume/output/``` directory
+
+### 5. Local development
+```
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python3 src/analyze.py
+```

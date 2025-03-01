@@ -46,7 +46,7 @@ for file in files:
             img_path = img_bgr, 
             actions = ['age', 'gender', 'emotion'],
             enforce_detection=False,
-            detector_backend=detector
+            detector_backend=detector,
             silent=True
         ) if (i % skip_frame == 0) else cache_result
         cache_result = result
