@@ -25,12 +25,12 @@ docker compose run deepface
 Configure defaults
 ```
 DEEPFACE_DETECTOR=opencv DEEPFACE_SKIP_FRAME=1 docker compose run deepface
-DEEPFACE_DETECTOR=large-v3 DEEPFACE_SKIP_FRAME=24 docker compose run deepface
-DEEPFACE_DETECTOR=large-v3-turbo DEEPFACE_SKIP_FRAME=24 docker compose run deepface
+DEEPFACE_DETECTOR=retinaface DEEPFACE_SKIP_FRAME=24 docker compose run deepface
+DEEPFACE_DETECTOR=mtcnn DEEPFACE_SKIP_FRAME=24 docker compose run deepface
 ```
 | Argument    | Values | Defaults |
 | -------- | ------- |------- |
-| DEEPFACE_DETECTOR  | 'opencv', 'retinaface', 'mtcnn', 'ssd', 'dlib', 'mediapipe', 'yolov8', 'centerface' [description](https://github.com/serengil/deepface#:~:text=its%20tutorial.-,Face%20Detection%20and%20Alignment,-%2D%20Demo)   |   opencv
+| DEEPFACE_DETECTOR  | opencv, retinaface, mtcnn, ssd, dlib, mediapipe, yolov8, centerface [description](https://github.com/serengil/deepface#:~:text=its%20tutorial.-,Face%20Detection%20and%20Alignment,-%2D%20Demo)   |   opencv
 | DEEPFACE_SKIP_FRAME | 1, 5, 24, etc (depends on the model)     |  10
 
 ### 4. Result
