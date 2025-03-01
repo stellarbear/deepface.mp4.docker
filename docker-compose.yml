@@ -1,0 +1,15 @@
+version: "3.3"
+
+services:
+  deepface:
+    build:
+      context: .
+    stdin_open: true
+    tty: true
+    environment:
+      - DEEPFACE_SKIP_FRAME=${DEEPFACE_SKIP_FRAME:-10}
+    volumes:
+      - ./models:/usr/local/src/deepface/models
+      - ./volume:/usr/local/src/deepface/volume
+    command: python src/analyze.py
+          

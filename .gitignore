@@ -1,0 +1,6 @@
+*.bin
+volume/input/*
+volume/output/*
+.venv/*
+models/*
+.DS_Store
