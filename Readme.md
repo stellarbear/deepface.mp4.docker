@@ -2,7 +2,7 @@ Run the [deepface](https://github.com/serengil/deepface/) in a Docker container 
 
 ## TLDR
 ```
-docker compose run deepface
+./bin/run.sh
 ```
 or
 ```
